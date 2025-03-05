@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+
+     <!-- Icon in tab bar -->
+  <link rel="icon" href="./images/favicon.png" type="image/png">
+  <!-- CDN for Bootstrap CSS file -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Font Awesome icon css link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- Boxicons css link for icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./CSS/colors.css">
+
+</head>
+<body>
+   
+     <!-- Navbar using bootstrap -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <!-- sticky-top is used to stick the navbar at the top of the page -->
+    <div class="container-fluid">
+      <!-- Offcanvas Trigger Button -->
+      <button class="btn btn-primary offcanvas-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- Navbar with Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./images/KidsZone_logo.png" alt="Logo">
+      </a>
+
+      <!-- Collapse Navbar Content (Menu) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- Home Link -->
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="KidsZone.html">Home</a>
+          </li>
+
+          <!-- About Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="AboutUs.html">About</a>
+          </li>
+
+          <!-- Course Outline Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Course Outline
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="E-learning.html"><i class="fa-solid fa-gamepad"></i> E-Learning
+                  Activities</a></li>
+              <li><a class="dropdown-item" href="arts.html"><i class="fa-solid fa-paint-brush"></i> Creative Art
+                  Projects</a></li>
+              <li><a class="dropdown-item" href="story.html"><i class="fa-solid fa-book"></i> Story Time Sessions</a>
+              </li>
+            </ul>
+          </li> 
+
+            <!-- ContactUs Link -->
+            <li class="nav-item">
+              <a class="nav-link " href="ContactUs.html">Contact Us</a>
+           </li>
+        </ul>
+
+        <!-- Login/Register on the right -->
+        <ul class="navbar-nav login-register">
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="register.html"> Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="login.html"> Login</a>
+          </li>
+        </ul>
+
+        <!-- Search Bar -->
+        <div class="input_group">
+          <input type="search" placeholder="Search Fun Activities...">
+          <i class='bx bx-search-alt' id="search_icon"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Offcanvas Component -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Activity Board:</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul>
+        <!-- Linked Using Anchor Tag (open in new tab)-->
+        <a href="abc.html" target="_blank" class="link_styling">
+          <li><img src="./images/abc.png" alt="ABC Image" height="60px" width="60px"> ABC Fun Zone</li>
+        </a>
+        <a href="counting.html" target="_blank" class="link_styling">
+          <li><img src="./images/123.png" alt="123 Image" height="50px" width="50px"> Counting Time</li>
+        </a>
+        <a href="fruits.html" target="_blank" class="link_styling">
+          <li><img src="./images/orange.png" alt="Orange Image" height="47px" width="47px"> Fruity Adventures</li>
+        </a>
+        <a href="colors.html" target="_blank" class="link_styling">
+          <li><img src="./images/color.png" alt="Color Image" height="47px" width="47px"> Color Exploration</li>
+        </a>
+        <a href="month.html" target="_blank" class="link_styling">
+          <li><img src="./images/month.png" alt="Month Image" height="40px" width="40px"> The Magical Months</li>
+        </a>
+        <a href="animals.html" target="_blank" class="link_styling">
+          <li><img src="./images/penguin.png" alt="Penguin Image" height="50px" width="50px"> Animal Kingdom</li>
+        </a>
+        <a href="tables.html" target="_blank" class="link_styling">
+          <li><img src="./images/table.png" alt="Table Image" height="50px" width="60px"> Table Time Heroes</li>
+        </a>
+        <a href="seasons.html" target="_blank" class="link_styling">
+          <li>
+            <img src="./images/season.png" alt="Seasonal Image" height="47px" width="47px"> Seasonal Wonders
+          </li>
+        </a>
+        <a href="vegetables.html" target="_blank" class="link_styling">
+          <li><img src="./images/vegetables.png" alt="Veges Image" height="55px" width="55px"> The Vegetable Garden
+          </li>
+        </a>
+        <a href="week.html" target="_blank" class="link_styling">
+          <li><img src="./images/week.png" alt="Week Image" height="50px" width="50px"> The Weekday Wonders
+          </li>
+        </a>
+        <a href="rhymes.html" target="_blank" class="link_styling">
+          <li><img src="./images/rhyme.png" alt="Rhyme Image" height="40px" width="40px"> Rhyme World
+          </li>
+        </a>
+        <a href="addition.html" target="_blank" class="link_styling">
+          <li><img src="./images/add.png" alt="Addition Image" height="45px" width="45px"> The
+            Addition Quest
+          </li>
+        </a>
+        <a href="subtraction.html" target="_blank" class="link_styling">
+          <li><img src="./images/subtract.png" alt="Subtract Image" height="47px" width="47px"> The
+            Subtraction Challenge
+          </li>
+        </a>
+        <a href="multiplication.html" target="_blank" class="link_styling">
+          <li><img src="./images/multiply.png" alt="Multiply Image" height="55px" width="55px"> Multiply the Fun
+          </li>
+        </a>
+        <a href="division.html" target="_blank" class="link_styling">
+          <li><img src="./images/divide.png" alt="Divide Image" height="55px" width="55px"> Explore Division
+          </li>
+        </a>
+      </ul>
+    </div>
+  </div>
+
+
+   
+    <h1 id="heading">COLORS</h1>
+
+   
+    
+   
+   <img src="./images/learn colors.jpg" alt="" id="learn-colors-banner">
+
+   <header >
+   Basic Fun Colors !
+</header>
+
+<div class="color-section">
+    <div class="color-card" style="background-color: #FFCDD2; color: #de0a26;">
+        Red
+    </div>
+    <div class="color-card" style="background-color: #Ffc0e2; color: #ef007e;">
+        Pink
+    </div>
+    <div class="color-card" style="background-color: #DCEDC8; color: #32cd32;">
+        Green
+    </div>
+    <div class="color-card" style="background-color: #BBDEFB; color: #0065a2;">
+        Blue
+    </div>
+    <div class="color-card" style="background-color: #FFF176; color: #F57F17;">
+        Yellow
+    </div>
+    <div class="color-card" style="background-color: #e0a5ea; color: #7600bc;">
+        Purple
+    </div>
+</div>
+
+ 
+
+<h1 id="basic-color-heading">Basic Art Colors </h1>
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-4">
+            <div class="card" style="width: 20rem;">
+              <img src="./images/green.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Green</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 20rem;">
+              <img src="./images/red.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Red</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 20rem;">
+              <img src="./images/blue.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Blue</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-4">
+            <div class="card" style="width: 20rem;">
+              <img src="./images/pink.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Pink</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 20rem;">
+              <img src="./images/yellow.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Yellow</p>
+              </div>
+            
+            
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 20rem;">
+              <img src="./images/purple.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Purple</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-4">
+            <div class="card" style="width: 20rem;">
+              <img src="./Alphabet.html" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Orange</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 20rem;">
+              <img src="./images/black.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Black</p>
+              </div>
+            
+            
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 20rem;">
+              <img src="./images/grey.jpg" class="card-img-top" alt="..."><div class="card-body">
+                <p class="card-text">Grey</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div class="rainbow-colors">
+  <img src="https://th.bing.com/th/id/OIP.sksA4x8bAS0cI8Gv_em1mwAAAA?rs=1&pid=ImgDetMain" alt="" id="rainbow">
+ 
+<div class="heading-2">
+ <h2 >Colors EveryWhere</h2> 
+<p>We live in a colorful world! I love all the brightly colored flowers, clothing choices, crayola crayons for coloring sheets, different colored animals, and more! One of the things that young learners need to master is color recognition and color names</p> 
+</div>
+
+</div>
+
+<div class="container-box">
+  <div class="left">
+    <img src="./images/star-removebg-preview (2).png" id="star" alt="">
+</div>
+
+  <div class="right">
+      <p>Colors can have different effects on children's learning and mood.Learning about colors can be lots of fun! From reading books, making art projects, picking clothes, and looking at the world around them they will learn all the basic colors.</p>
+  </div>
+
+</div>
+
+
+ 
+<!-- ! Footer Section  -->
+<footer>
+  <!-- heading -->
+  <div>
+      <h2 id="footer_heading">Kids Zone | Explore, Play, and Learn</h2>
+  </div>
+  <div id="f_subheading">
+      <p><i class="fas fa-trophy"></i> Fun for All Ages | <i class="fas fa-book"></i> Educational Content | <i
+              class="fas fa-star"></i> Star Rewards</p>
+  </div>
+  <div class="footer-container">
+      <!-- About Us Section -->
+      <div class="footer-section about-us">
+          <h3>About Us</h3>
+          <p><strong>Who We Are</strong></p>
+          <p>KidsZone is an educational platform designed to make learning fun for children of all ages. We
+              believe in
+              creative, interactive lessons to help kids grow in a safe and engaging environment.</p>
+          <p><strong>Our Mission</strong></p>
+          <p>To inspire a love for learning through interactive activities, games, and educational content.</p>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="footer-section quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="index.html" target="_blank">Home</a></li>
+              <li><a href="E-learning.html" target="_blank">Courses</a></li>
+              <li><a href="ContactUs.html" target="_blank">Contact Us</a></li>
+              <li><a href="index.html#faqs" target="_blank">FAQs</a></li>
+              <li><a href="terms.html" target="_blank">Terms & Conditions</a></li>
+          </ul>
+      </div>
+
+      <!-- Explore & Discover Section -->
+      <div class="footer-section fun-games">
+          <h3>Explore & Discover</h3>
+          <ul>
+              <li><a href="arts.html" target="_blank">Arts & Crafts</a></li>
+              <li><a href="seasons.html" target="_blank">Seasonal Wonders</a></li>
+              <li><a href="multiplication.html" target="_blank">Math Quizzes</a></li>
+              <li><a href="counting.html" target="_blank">Counting Activity</a></li>
+              <li><a href="story.html" target="_blank">Story Time Videos</a></li>
+          </ul>
+      </div>
+
+      <!-- Follow Us Section -->
+      <div class="wrapper">
+          <h3 id="follow_us">Follow Us:</h3>
+          <a href="https://www.facebook.com/kidszone" target="_blank" class="icon facebook">
+              <div class="tooltip">
+                  Facebook
+              </div>
+              <span><i class="fab fa-facebook-f"></i></span>
+          </a>
+          <a href="https://www.twitter.com/kidszone" target="_blank" class="icon twitter">
+              <div class="tooltip">
+                  Twitter
+              </div>
+              <span><i class="fab fa-twitter"></i></span>
+          </a>
+          <a href="https://www.instagram.com/kidszone" target="_blank" class="icon instagram">
+              <div class="tooltip">
+                  Instagram
+              </div>
+              <span><i class="fab fa-instagram"></i></span>
+          </a>
+          <a href="https://github.com" target="_blank" class="icon github">
+              <div class="tooltip">
+                  Github
+              </div>
+              <span><i class="fab fa-github"></i></span>
+          </a>
+          <a href="https://www.youtube.com/kidszone" target="_blank" class="icon youtube">
+              <div class="tooltip">
+                  YouTube
+              </div>
+              <span><i class="fab fa-youtube"></i></span>
+          </a>
+      </div>
+  </div>
+
+  <div class="footer-bottom">
+      <p> &copy; 2025 Kids Zone. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+ <!-- CDN for Bootstrap Javascript file -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+ crossorigin="anonymous"></script>
+
+
+    
+</body>
+</html>

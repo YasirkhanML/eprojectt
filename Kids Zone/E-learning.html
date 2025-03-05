@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kids Zone - Course Outline</title>
+  <!-- Icon in tab bar -->
+  <link rel="icon" href="./images/favicon.png" type="image/png">
+  <!-- CDN for Bootstrap CSS file -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Font Awesome icon css link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- Boxicons css link for icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- CSS file link -->
+  <link rel="stylesheet" href="./CSS/E-learning.css">
+</head>
+
+<body>
+  <!-- Navbar using bootstrap -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <!-- sticky-top is used to stick the navbar at the top of the page -->
+    <div class="container-fluid">
+      <!-- Offcanvas Trigger Button -->
+      <button class="btn btn-primary offcanvas-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- Navbar with Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./images/KidsZone_logo.png" alt="Logo">
+      </a>
+
+      <!-- Collapse Navbar Content (Menu) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- Home Link -->
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <!-- About Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="AboutUs.html">About</a>
+          </li>
+
+          <!-- Course Outline Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Course Outline
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="E-learning.html"><i class="fa-solid fa-gamepad"></i> E-Learning
+                  Activities</a></li>
+              <li><a class="dropdown-item" href="arts.html"><i class="fa-solid fa-paint-brush"></i> Creative Art
+                  Projects</a></li>
+              <li><a class="dropdown-item" href="story.html"><i class="fa-solid fa-book"></i> Story Time Sessions</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ContactUs Link -->
+          <li class="nav-item">
+            <a class="nav-link " href="ContactUs.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- Login/Register on the right -->
+        <ul class="navbar-nav login-register">
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="register.html"> Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="login.html"> Login</a>
+          </li>
+        </ul>
+
+        <!-- Search Bar -->
+        <div class="input_group">
+          <input type="search" placeholder="Search Fun Activities...">
+          <i class='bx bx-search-alt' id="search_icon"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Offcanvas Component -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Activity Board:</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul>
+        <!-- Linked Using Anchor Tag (open in new tab)-->
+        <a href="abc.html" target="_blank" class="link_styling">
+          <li><img src="./images/abc.png" alt="ABC Image" height="60px" width="60px"> ABC Fun Zone</li>
+        </a>
+        <a href="counting.html" target="_blank" class="link_styling">
+          <li><img src="./images/123.png" alt="123 Image" height="50px" width="50px"> Counting Time</li>
+        </a>
+        <a href="fruits.html" target="_blank" class="link_styling">
+          <li><img src="./images/orange.png" alt="Orange Image" height="47px" width="47px"> Fruity Adventures</li>
+        </a>
+        <a href="colors.html" target="_blank" class="link_styling">
+          <li><img src="./images/color.png" alt="Color Image" height="47px" width="47px"> Color Exploration</li>
+        </a>
+        <a href="month.html" target="_blank" class="link_styling">
+          <li><img src="./images/month.png" alt="Month Image" height="40px" width="40px"> The Magical Months</li>
+        </a>
+        <a href="animals.html" target="_blank" class="link_styling">
+          <li><img src="./images/penguin.png" alt="Penguin Image" height="50px" width="50px"> Animal Kingdom</li>
+        </a>
+        <a href="tables.html" target="_blank" class="link_styling">
+          <li><img src="./images/table.png" alt="Table Image" height="50px" width="60px"> Table Time Heroes</li>
+        </a>
+        <a href="seasons.html" target="_blank" class="link_styling">
+          <li>
+            <img src="./images/season.png" alt="Seasonal Image" height="47px" width="47px"> Seasonal Wonders
+          </li>
+        </a>
+        <a href="vegetables.html" target="_blank" class="link_styling">
+          <li><img src="./images/vegetables.png" alt="Veges Image" height="55px" width="55px"> The Vegetable Garden
+          </li>
+        </a>
+        <a href="week.html" target="_blank" class="link_styling">
+          <li><img src="./images/week.png" alt="Week Image" height="50px" width="50px"> The Weekday Wonders
+          </li>
+        </a>
+        <a href="rhymes.html" target="_blank" class="link_styling">
+          <li><img src="./images/rhyme.png" alt="Rhyme Image" height="40px" width="40px"> Rhyme World
+          </li>
+        </a>
+        <a href="addition.html" target="_blank" class="link_styling">
+          <li><img src="./images/add.png" alt="Addition Image" height="45px" width="45px"> The
+            Addition Quest
+          </li>
+        </a>
+        <a href="subtraction.html" target="_blank" class="link_styling">
+          <li><img src="./images/subtract.png" alt="Subtract Image" height="47px" width="47px"> The
+            Subtraction Challenge
+          </li>
+        </a>
+        <a href="multiplication.html" target="_blank" class="link_styling">
+          <li><img src="./images/multiply.png" alt="Multiply Image" height="55px" width="55px"> Multiply the Fun
+          </li>
+        </a>
+        <a href="division.html" target="_blank" class="link_styling">
+          <li><img src="./images/divide.png" alt="Divide Image" height="55px" width="55px"> Explore Division
+          </li>
+        </a>
+      </ul>
+    </div>
+  </div>
+
+  <!-- E-Learning section begins -->
+  <div class="about-section">
+    <h2>Welcome to Kids Zone!</h2>
+    <p>At Kids Zone, we are dedicated to providing a safe, fun, and engaging environment for young learners. Our
+      platform offers a variety of interactive lessons and resources designed to foster creativity, critical
+      thinking, and essential skills. Whether your child is learning their ABCs or mastering basic math, Kids Zone
+      is here to make learning exciting and memorable. Explore our course offerings and discover a world of fun
+      and knowledge for your little one!</p>
+  </div>
+  <header>
+    <h1>Explore Our Course Outline</h1>
+    <p>Engage your child with fun and educational lessons that cover a wide range of topics!</p>
+  </header>
+
+
+  <div class="course-outline">
+
+
+
+    <div class="section">
+      <div>
+        <h3>Alphabets</h3>
+        <p>Learn the alphabet through colorful visuals and fun exercises. Recognize and pronounce letters to
+          build early literacy skills.</p>
+      </div>
+      <img
+        src="https://m.media-amazon.com/images/S/pv-target-images/51173df7f87c5c8ded261ce0a816c6770320170d07f1e5cf67cdafb4a92b73ed.png"
+        alt="Alphabets">
+    </div>
+
+    <div class="section">
+      <div>
+        <h3>Numbers</h3>
+        <p>Understand numbers and counting with games and visuals. Start from 1 to 10 and gradually progress to
+          larger numbers.</p>
+      </div>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRouDnJdpzBxvjs0xkD-e5sDU7kLwIls7UkW2BwpkVvVEDCfgLz1JGElTk5vmlp9Yo54T4&usqp=CAU"
+        alt="Numbers">
+    </div>
+
+    <div class="section">
+      <div>
+        <h3>Phonics</h3>
+        <p>Learn the sounds of letters and how they form words. Our phonics lessons will help improve your
+          child’s reading ability.</p>
+      </div>
+      <img
+        src="https://i0.wp.com/www.aworldoflanguagelearners.com/wp-content/uploads/2020/08/phonics.png?resize=940%2C576&ssl=1"
+        alt="Phonics">
+    </div>
+
+    <div class="section">
+      <div>
+        <h3>Infographics</h3>
+        <p>Visually engaging infographics that explain concepts like colors, shapes, and animals, helping kids
+          to learn through images.</p>
+      </div>
+      <img src="https://www.shutterstock.com/image-vector/astronaut-sitting-on-moon-holding-600nw-1811654299.jpg"
+        alt="Infographics">
+    </div>
+
+    <div class="section">
+      <div>
+        <h3>Days and Months</h3>
+        <p>Learn the names of the days of the week and months of the year with interactive tools and fun songs.
+        </p>
+      </div>
+      <img src="https://thumb.ac-illust.com/81/817d25c020b41b76d432c54a53fd02aa_t.jpeg" alt="Days and Months">
+    </div>
+
+    <div class="section">
+      <div>
+        <h3>Math Operations</h3>
+        <p>Master basic mathematical operations like addition and subtraction with simple lessons and examples.
+        </p>
+      </div>
+      <img src="https://www.thegreatapps.com/application/upload/Apps/2020/09/kids-math-app-192.png"
+        alt="Math Operations">
+    </div>
+
+    <div class="section">
+      <div>
+        <h3>Rhymes</h3>
+        <p>Singing rhymes is a fun way to improve memory, rhythm, and language skills. We have a collection of
+          popular nursery rhymes!</p>
+      </div>
+      <img src="https://cdn6.aptoide.com/imgs/6/4/2/642f8b9d1765eeb053345255f83fb4a5_screen.png?w=293" alt="Rhymes">
+    </div>
+
+    <div class="section">
+      <div>
+        <h3>Animals</h3>
+        <p>Learn about different animals, their sounds, and their habitats through pictures and interactive
+          videos.</p>
+      </div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkBpxJE00REAWeMsGt_A5M7kVkYAXO4uz2_w&s"
+        alt="Animals">
+    </div>
+
+    <div class="section">
+      <div>
+        <h3>Vegetables</h3>
+        <p>Recognize and learn the names of various vegetables, their benefits, and how they contribute to a
+          healthy diet.</p>
+      </div>
+      <img
+        src="https://media.istockphoto.com/id/1524823226/photo/colorful-raw-fruits-and-vegetables-varied-vegan-food-vivid-rainbow-arrangement.jpg?s=2048x2048&w=is&k=20&c=hllYZ-xV_JbJhUi92qi5EnbdcWpxS3PRH7S4lkFDLJI="
+        alt="Vegetables">
+    </div>
+
+    <div class="section">
+      <div>
+        <h3>Fruits</h3>
+        <p>Explore the world of fruits with colorful unique fruits and take their benefits. Learn their names
+          and health benefits.</p>
+      </div>
+      <img
+        src="https://media.istockphoto.com/id/517663102/photo/fruit-salad-in-a-clay-brown-dish-close-up-top-view.jpg?s=612x612&w=0&k=20&c=Imw37_DVJivtEzQ0HkZxqJeettdVY_SVlQYq-GSJboM="
+        alt="Fruits">
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <!-- heading -->
+    <div>
+      <h2 id="footer_heading">Kids Zone | Explore, Play, and Learn</h2>
+    </div>
+    <div id="f_subheading">
+      <p><i class="fas fa-trophy"></i> Fun for All Ages | <i class="fas fa-book"></i> Educational Content | <i
+          class="fas fa-star"></i> Star Rewards</p>
+    </div>
+    <div class="footer-container">
+      <!-- About Us Section -->
+      <div class="footer-section about-us">
+        <h3>About Us</h3>
+        <p><strong>Who We Are</strong></p>
+        <p>KidsZone is an educational platform designed to make learning fun for children of all ages. We
+          believe in
+          creative, interactive lessons to help kids grow in a safe and engaging environment.</p>
+        <p><strong>Our Mission</strong></p>
+        <p>To inspire a love for learning through interactive activities, games, and educational content.</p>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="footer-section quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html" target="_blank">Home</a></li>
+          <li><a href="E-learning.html" target="_blank">Courses</a></li>
+          <li><a href="ContactUs.html" target="_blank">Contact Us</a></li>
+          <li><a href="index.html#faqs" target="_blank">FAQs</a></li>
+          <li><a href="terms.html" target="_blank">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Explore & Discover Section -->
+      <div class="footer-section fun-games">
+        <h3>Explore & Discover</h3>
+        <ul>
+          <li><a href="arts.html" target="_blank">Arts & Crafts</a></li>
+          <li><a href="seasons.html" target="_blank">Seasonal Wonders</a></li>
+          <li><a href="multiplication.html" target="_blank">Math Quizzes</a></li>
+          <li><a href="counting.html" target="_blank">Counting Activity</a></li>
+          <li><a href="story.html" target="_blank">Story Time Videos</a></li>
+        </ul>
+      </div>
+
+      <!-- Follow Us Section -->
+      <div class="wrapper">
+        <h3 id="follow_us">Follow Us:</h3>
+        <a href="https://www.facebook.com/kidszone" target="_blank" class="icon facebook">
+          <div class="tooltip">
+            Facebook
+          </div>
+          <span><i class="fab fa-facebook-f"></i></span>
+        </a>
+        <a href="https://www.twitter.com/kidszone" target="_blank" class="icon twitter">
+          <div class="tooltip">
+            Twitter
+          </div>
+          <span><i class="fab fa-twitter"></i></span>
+        </a>
+        <a href="https://www.instagram.com/kidszone" target="_blank" class="icon instagram">
+          <div class="tooltip">
+            Instagram
+          </div>
+          <span><i class="fab fa-instagram"></i></span>
+        </a>
+        <a href="https://github.com" target="_blank" class="icon github">
+          <div class="tooltip">
+            Github
+          </div>
+          <span><i class="fab fa-github"></i></span>
+        </a>
+        <a href="https://www.youtube.com/kidszone" target="_blank" class="icon youtube">
+          <div class="tooltip">
+            YouTube
+          </div>
+          <span><i class="fab fa-youtube"></i></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p> &copy; 2025 Kids Zone. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- CDN for Bootstrap Javascript file -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

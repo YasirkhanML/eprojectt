@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background: url(./images/Norway.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.login_page{
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    color: #fff;
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255,255,255,.2);
+}
+.light{
+    font-size:23px;
+}
+input[type="text"],input[type="password"]{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 35px;
+    width: 300px;
+    margin: 15px;
+    color: #fff;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 20px;
+    outline: none;
+    letter-spacing: 1px;
+
+}
+input::placeholder{
+    color: #fff;
+    opacity: 80%;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+a:hover{
+    text-decoration: underline;
+    color:rgb(148, 241, 253);
+}
+button{
+    color: #fff;
+    background-color: rgb(33, 123, 192);
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+button:hover{
+    color:black;
+    background-color: rgb(146, 247,213);
+    transition: .5s;
+}
+
+.sign_up{
+    height: 270px;
+    font-size: 18px;
+    line-height:80px;
+
+ }
+ .for{
+    display:flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-left: 60px;
+
+ }

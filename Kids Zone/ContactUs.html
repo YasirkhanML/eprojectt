@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Icon in tab bar -->
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./CSS/ContactUs.css">
+    <style>
+        /* General styles */
+        body, html {
+            height: 100%;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .contact-us {
+            height: 125vh;
+            background-image: url('./images/office.jpg'); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+
+        .contact-form-container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #fffae6; 
+        }
+
+        form {
+            display: flex;
+            flex-direction:column ;
+        }
+
+        label {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #fff;
+            text-align: left;
+        }
+
+        input, textarea {
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        input[type="text"], input[type="email"] {
+            background-color: #fcf1b6; 
+            color: #333;
+        }
+
+        textarea {
+            background-color: #ffebcd; 
+            color: #333;
+        }
+
+        .submit-btn {
+            padding: 15px;
+            background-color: #2a9d8f; 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #264653; 
+        }
+    </style>
+</head>
+<body>
+    <section class="contact-us">
+        <div class="contact-form-container">
+            <p>We would be grateful to hear from you! Please fill out the form below so your query reaches us.</p>
+            
+            <form action="#" onsubmit="return validateForm()">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" >
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" ></textarea>
+                
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            // Check if any field is empty
+            if (name == "" || email == "" || message == "") {
+                alert("All fields are mandatory. Please fill in all the fields.");
+                return false; // Prevent form submission
+            }
+
+            // Validate name (only alphabets and at least 3 characters)
+            var nameRegex = /^[a-zA-Z\s]{3,}$/;
+            if (!nameRegex.test(name)) {
+                alert("Name should only contain alphabets and be at least 3 characters long.");
+                return false;
+            }
+
+            // Validate email using regex
+            var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            // If all checks pass
+            alert("Your form has been successfully submitted.");
+            return true; // Allow form submission
+        }
+    </script>
+</body>
+</html>
